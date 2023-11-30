@@ -1,9 +1,9 @@
 <template>
     <div class="logo" v-if="isMainPage">
-        <img src="../../assets/logo.svg" alt="logo">
+        <img src="../../assets/images/logo.svg" alt="logo">
     </div>
     <a href="/" v-else>
-        <img src="../../assets/logo.svg" alt="logo">
+        <img src="../../assets/images/logo.svg" alt="logo">
     </a>
 </template>
 

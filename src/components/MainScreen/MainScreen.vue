@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="main-screen__image">
-                    <img src="../../assets/main-img.svg" alt="">
+                    <img src="../../assets/images/main-img.svg" alt="">
                 </div>
             </div>
 
@@ -66,7 +66,7 @@ export default {
 
         &__image {
             align-self: flex-end;
-            
+
             img {
                 display: block;
                 max-width: none;

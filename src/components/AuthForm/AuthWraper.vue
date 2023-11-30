@@ -1,21 +1,14 @@
 <template>
-  <div>
-    <SignIn v-if="isSignInForm" @swapForm="isSignInForm = false" />
-    <SignUp v-else @swapForm="isSignInForm = true" />
-  </div>
+  <aside class="auth-form">
+    <h2 v-if="$slots.title">
+      <slot name="title" />
+    </h2>
+    <slot />
+  </aside>
 </template>
-
-<script setup>
-import SignIn  from '@/components/AuthForm/SignIn.vue';
-import SignUp  from '@/components/AuthForm/SignUp.vue';
-import { ref } from 'vue';
-
-const isSignInForm = ref(true);
-</script>
 
 <style lang="scss">
 .auth-form {
-
   &__link {
     color: #9DA5AF;
     text-overflow: ellipsis;
